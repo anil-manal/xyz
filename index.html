@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="banner">
+        <img src="./logo.png" alt="logo" class="logo">
+        <div class="nav-links" id="navLinks">
+            <img src="./menu.png" alt="menu" class="menu" onclick="hideMenu()">
+            <i class="menu" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Bedroom</a></li>
+                <li><a href="#">Dining</a></li>
+                <li><a href="#">Kitchen</a></li>
+                <li><a href="#">Backyard</a></li>
+            </ul>
+        </div>
+        <img src="./menu.png" alt="menu" class="menu" onclick="showMenu()">
+        <i class="menu" onclick="showMenu()"> </i>
+        <div class="content">
+            <h1>DESIGN YOUR HOUSE</h1>
+            <p>here is a big dining hall in my house where we all take our meal.
+                <br> I planted many flowers plant <br> in my house terrace.</p>
+            <div>
+                <button type="button"><span></span> WATCH MORE</button>
+                <button type="button"><span></span> CONTACT US</button>
+                <button type="button"><span></span> BUY NOW</button>
+            </div>
+        </div>
+    </div>
+    <!-- js for menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
